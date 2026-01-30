@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazon Beach Guernsey | Surfing, Swimming & Sunsets</title>
+    <meta name="description" content="Guernsey's most popular west coast beach. Perfect for surfing, swimming, and watching the sunset. Facilities, parking, and cafe nearby.">
+    <link rel="canonical" href="https://vazonbeach.com/">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Beach",
+      "name": "Vazon Beach",
+      "description": "Guernsey's most popular west coast beach. Perfect for surfing, swimming, and watching the sunset. Facilities, parking, and cafe nearby.",
+      "url": "https://vazonbeach.com/",
+      "address": {"@type": "PostalAddress", "addressLocality": "Guernsey", "addressCountry": "GG"},
+      "isAccessibleForFree": true
+    }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #0066cc;
+            --secondary: #e6f2ff;
+            --accent: #ff6b35;
+            --text: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #003d7a 100%);
+            color: white;
+            padding: 120px 24px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; font-weight: 700; margin-bottom: 20px; }
+        .hero .tagline { font-size: 1.25rem; opacity: 0.9; margin-bottom: 30px; }
+        .hero-tags { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+        .highlight-tag { background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 8px 16px; border-radius: 50px; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.3); }
+        
+        /* Sections */
+        .section { padding: 80px 24px; max-width: 1200px; margin: 0 auto; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--text); margin-bottom: 40px; text-align: center; }
+        
+        /* Intro */
+        .intro { background: var(--secondary); }
+        .intro-text { max-width: 800px; margin: 0 auto; font-size: 1.125rem; text-align: center; color: var(--text-light); }
+        
+        /* Activities Grid */
+        .activities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-top: 40px; }
+        .activity-card { background: white; padding: 32px; border-radius: 12px; text-align: center; border: 2px solid #f0f0f0; transition: all 0.3s; }
+        .activity-card:hover { border-color: var(--primary); transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .activity-card h4 { color: var(--primary); font-size: 1.125rem; }
+        
+        /* Two Column Layout */
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+        @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; gap: 40px; } }
+        
+        /* Facilities */
+        .facilities-list { list-style: none; }
+        .facilities-list li { padding: 16px 0; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 12px; }
+        .facilities-list li::before { content: "✓"; color: var(--primary); font-weight: bold; }
+        
+        /* Tips */
+        .tips-grid { display: grid; gap: 16px; margin-top: 30px; }
+        .tip-item { background: #fff9e6; padding: 20px 24px; border-radius: 8px; border-left: 4px solid var(--accent); }
+        
+        /* CTA Section */
+        .cta-section { background: var(--text); color: white; text-align: center; padding: 100px 24px; }
+        .cta-button { display: inline-flex; align-items: center; gap: 12px; background: var(--accent); color: white; padding: 20px 40px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.125rem; margin-top: 24px; transition: transform 0.2s; }
+        .cta-button:hover { transform: scale(1.05); }
+        
+        /* Nearby */
+        .nearby-links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
+        .nearby-link { padding: 12px 24px; background: var(--secondary); color: var(--primary); text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.2s; }
+        .nearby-link:hover { background: var(--primary); color: white; }
+        
+        /* Footer */
+        footer { background: #f5f5f5; padding: 40px 24px; text-align: center; color: var(--text-light); }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Vazon Beach</h1>
+            <p class="tagline">Guernsey's most popular west coast beach. Perfect for surfing, swimming, and watching the sunset. Facilities, parking, and cafe nearby.</p>
+            <div class="hero-tags"><span class="highlight-tag">Best surfing beach in Guernsey</span><span class="highlight-tag">Lifeguard patrol in summer</span><span class="highlight-tag">Beach cafe & toilets</span><span class="highlight-tag">Disabled access</span></div>
+        </div>
+    </section>
+    
+    <section class="section intro">
+        <p class="intro-text">Vazon has been a popular recreation spot since Victorian times when Guernsey became a tourist destination.</p>
+    </section>
+    
+    <section class="section">
+        <h2 class="section-title">Things to Do</h2>
+        <div class="activities-grid"><div class="activity-card"><h4>Surfing</h4></div><div class="activity-card"><h4>Swimming</h4></div><div class="activity-card"><h4>Sunbathing</h4></div><div class="activity-card"><h4>Beach volleyball</h4></div><div class="activity-card"><h4>Rock pooling</h4></div></div>
+    </section>
+    
+    <section class="section" style="background: #f9f9f9;">
+        <div class="two-col">
+            <div>
+                <h2 class="section-title" style="text-align: left;">Facilities</h2>
+                <ul class="facilities-list"><li>Public toilets</li><li>Beach cafe</li><li>Car park (paid)</li><li>Disabled access</li><li>Lifeguard (summer only)</li></ul>
+            </div>
+            <div>
+                <h2 class="section-title" style="text-align: left;">Visitor Tips</h2>
+                <div class="tips-grid"><div class="tip-item"><strong>Tip:</strong> Check surf forecast - best waves with westerly winds</div><div class="tip-item"><strong>Tip:</strong> Arrive early on summer weekends - parking fills up</div><div class="tip-item"><strong>Tip:</strong> Cafe closes at 5pm in winter</div><div class="tip-item"><strong>Tip:</strong> Watch the sunset - best view on the island</div></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 16px;">Plan Your Visit</h2>
+        <p style="font-size: 1.125rem; opacity: 0.9;">Get directions to Vazon Beach</p>
+        <a href="https://maps.app.goo.gl/pcEQp47R3bN6wBqu8" class="cta-button" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+    </section>
+    
+    <section class="section">
+        <h2 class="section-title">Nearby Attractions</h2>
+        <div class="nearby-links"><a href="#cobo-bay" class="nearby-link">Cobo Bay</a><a href="#port-soif" class="nearby-link">Port Soif</a><a href="#l'erée-bay" class="nearby-link">L'Erée Bay</a><a href="#fort-hommet" class="nearby-link">Fort Hommet</a></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 vazonbeach.com • Guernsey Visitor Guide</p>
+    </footer>
+</body>
+</html>
